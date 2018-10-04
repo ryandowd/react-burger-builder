@@ -1,2 +1,2 @@
-# react-lab
+# react-burger-builder
 React stuff
