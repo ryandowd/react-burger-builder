@@ -111,3 +111,17 @@
     background: linear-gradient(#bf3813, #c45e38);
     margin: 2% auto;
 }
+
+.Pickles {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Pickles:before,
+.Pickles:after {
+    content: '';
+    width: 30%;
+    height: 6px;
+    background: green;
+    margin: 1px 0;
+}
