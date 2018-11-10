@@ -5,7 +5,7 @@ const input = ( props ) => {
   let inputElement = null;
   let validationError = null;
   const inputClasses = [classes.Input];
-
+  
   if ( props.invalid && props.shouldValidate && props.touched ) {
     inputClasses.push(classes.Invalid);
     validationError = <p className={classes.ValidationError}>Please enter a valid value for '{props.elementConfig.placeholder.toLowerCase()}'</p>;
@@ -13,6 +13,7 @@ const input = ( props ) => {
 
   switch(props.elementType) {
     case ('input'):
+      inputClasses.push(classes.InputElement);
       inputElement = <input 
         className={inputClasses.join(' ')} 
         {...props.elementConfig}
